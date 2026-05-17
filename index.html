@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oghenechovwe AKPOJOTOR | AI & Cloud Engineer</title>
 
+<!-- ✅ GOOGLE ANALYTICS (REPLACE WITH YOUR ID) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
+</script>
+
 <style>
 
 /* 🌌 BACKGROUND */
@@ -22,7 +31,7 @@ body {
     padding: 20px;
 }
 
-/* 🧊 GLASS */
+/* 🧊 GLASS EFFECT */
 .glass {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(14px);
@@ -38,6 +47,7 @@ header {
 
 h1 {
     font-size: 2.8em;
+    margin: 10px 0;
 }
 
 .tagline {
@@ -46,45 +56,96 @@ h1 {
 
 .highlight {
     color: #22c55e;
+    font-weight: bold;
 }
 
 /* PROFILE IMAGE */
 .profile-img {
     width: 260px;
     height: 260px;
+    object-fit: cover;
     border-radius: 50%;
     border: 3px solid #38bdf8;
-    object-fit: cover;
+    margin-top: 20px;
 }
 
 /* BUTTONS */
 .btn {
     display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
+    margin: 10px 8px;
+    padding: 12px 22px;
     background: #38bdf8;
-    color: black;
+    color: #020617;
     border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
+.btn:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+/* WHATSAPP */
 .btn-whatsapp {
     background: #22c55e;
     color: white;
 }
 
-/* PROJECT */
-.card {
-    margin-top: 20px;
+.btn-whatsapp:hover {
+    background: #16a34a;
 }
 
+/* LINKS */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+    margin-top: 30px;
+    padding: 25px;
+}
+
+/* PROJECT CARDS */
+.card {
+    margin: 20px 0;
+    padding: 18px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #38bdf8;
+}
+
+/* PROJECT IMAGE */
 .project-img {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
+/* CTA BOX */
+.cta {
+    text-align: center;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     margin-top: 40px;
+    padding: 20px;
+    color: #94a3b8;
+}
+
+small {
+    color: #94a3b8;
 }
 
 </style>
@@ -96,55 +157,88 @@ footer {
 
 <h1>Oghenechovwe AKPOJOTOR</h1>
 
-<p class="tagline">AI • ML • Cloud Engineering</p>
+<p class="tagline">
+AI • Machine Learning • Cloud Engineering • Intelligent Systems
+</p>
 
-<img src="assets/images/profile.jpg" class="profile-img">
+<img src="assets/images/profile.jpg" alt="Oghenechovwe AKPOJOTOR" class="profile-img">
 
 <p class="highlight">
 👉 Open to remote opportunities in AI, Cloud, and Intelligent Systems.
 </p>
 
-<!-- ✅ REAL COUNTER -->
-<p id="visitor-count" style="margin-top:15px; font-weight:bold; color:#38bdf8;">
+<!-- ✅ CUSTOM VISITOR COUNTER -->
+<p id="visitor-count" style="margin-top:15px; color:#38bdf8; font-weight:bold;">
 👁 Visitors: Loading...
 </p>
 
+<!-- ✅ FALLBACK COUNTER (ALWAYS WORKS) -->
+<noscript>
+<img src="https://hits.sh/imonie.github.io/akpojotor.svg">
+</noscript>
+
 <div>
-<a href="Oghenechovwe_Akpojotor_CV.pdf" class="btn">View CV</a>
-<a href="mailto:nou224068313@noun.edu.ng" class="btn">Contact</a>
-<a href="https://wa.me/2348035341982" class="btn btn-whatsapp">WhatsApp</a>
+<a href="Oghenechovwe_Akpojotor_CV.pdf" class="btn">📄 View CV</a>
+
+<a href="mailto:nou224068313@noun.edu.ng?subject=Opportunity%20Inquiry&body=Hello%20Oghenechovwe," class="btn">
+✉️ Email Me
+</a>
+
+<a href="https://wa.me/2348035341982" class="btn btn-whatsapp" target="_blank">
+💬 WhatsApp
+</a>
 </div>
+
+<p>
+<a href="https://github.com/iMonie">GitHub</a> |
+<a href="https://www.linkedin.com/in/databit365">LinkedIn</a>
+</p>
 
 </header>
 
 <div class="container">
 
 <section class="glass">
+<h2>Research Profile</h2>
+<p>
+I am an aspiring PhD researcher in Information Technology focused on machine learning systems,
+adaptive intelligence, and AI-driven monitoring systems.
+</p>
+</section>
+
+<section class="glass cta">
 <h2>Opportunities</h2>
-<p>I am actively seeking roles in AI, ML, and Cloud Engineering.</p>
+<p>I am actively seeking roles in AI, Machine Learning, and Cloud Engineering.</p>
+
+<a href="Oghenechovwe_Akpojotor_CV.pdf" class="btn">View CV</a>
+<a href="mailto:nou224068313@noun.edu.ng" class="btn">Contact</a>
 </section>
 
 <section class="glass">
-<h2>Projects</h2>
+<h2>Featured Projects</h2>
 
 <div class="card">
 <img src="assets/images/fraud.png" class="project-img">
-<h3>Fraud Detection</h3>
+<h3>Fraud Detection AI System</h3>
+<a href="https://github.com/iMonie/fraud-detection-ml">View Project</a>
 </div>
 
 <div class="card">
 <img src="assets/images/drift.png" class="project-img">
-<h3>Drift Detection</h3>
+<h3>Concept Drift Detection</h3>
+<a href="https://github.com/iMonie/shift-detection-study">View Project</a>
 </div>
 
 <div class="card">
 <img src="assets/images/mnist.png" class="project-img">
-<h3>MNIST DL</h3>
+<h3>MNIST Deep Learning</h3>
+<a href="https://github.com/iMonie/mnistproject">View Project</a>
 </div>
 
 <div class="card">
 <img src="assets/images/aws.png" class="project-img">
-<h3>AWS ML</h3>
+<h3>AWS Cloud System</h3>
+<a href="https://github.com/iMonie/aws-cloud-portfolio">View Project</a>
 </div>
 
 </section>
@@ -152,11 +246,22 @@ footer {
 <section class="glass">
 <h2>Publications</h2>
 <ul>
-<li>Fraud Detection AI</li>
-<li>Prompt Engineering</li>
-<li>Smart Cities AI</li>
-<li>MNIST DL</li>
+<li><a href="https://doi.org/10.5281/zenodo.20053984">End-to-End Fraud Detection System (2026)</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.19533533">Multilingual Prompt Engineering (2026)</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.15208541">AI in Smart Cities (2025)</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.15397901">Hybrid Deep Learning MNIST (2025)</a></li>
 </ul>
+</section>
+
+<section class="glass">
+<h2>Contact</h2>
+
+<p>
+<a href="mailto:nou224068313@noun.edu.ng">
+nou224068313@noun.edu.ng
+</a>
+</p>
+
 </section>
 
 </div>
@@ -165,22 +270,33 @@ footer {
 <p>© 2026 Oghenechovwe AKPOJOTOR</p>
 </footer>
 
-<!-- ✅ FIXED COUNTER -->
+<!-- ✅ VISITOR COUNTER SCRIPT (CUSTOM DISPLAY) -->
 <script>
-const url = "https://api.countapi.xyz/hit/akpojotor-portfolio/visits";
+const namespace = "akpojotor-portfolio";
+const key = "visits";
 
-// Force NO CACHE
-fetch(url, { cache: "no-store" })
+// First, increment the counter
+fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
 .then(res => res.json())
 .then(data => {
-    document.getElementById("visitor-count").innerText =
+    document.getElementById("visitor-count").innerHTML =
         "👁 Visitors: " + data.value;
 })
 .catch(() => {
-    document.getElementById("visitor-count").innerText =
-        "👁 Visitors: 1";
+    // Fallback: try to just get current value
+    fetch(`https://api.countapi.xyz/get/${namespace}/${key}`)
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("visitor-count").innerHTML =
+            "👁 Visitors: " + data.value;
+    })
+    .catch(() => {
+        document.getElementById("visitor-count").innerHTML =
+            "👁 Visitors: 1";
+    });
 });
 </script>
 
 </body>
 </html>
+
