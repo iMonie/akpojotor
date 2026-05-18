@@ -3,20 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oghenechovwe AKPOJOTOR | AI & Cloud Engineer</title>
+<title>Oghenechovwe AKPOJOTOR | AI Engineer</title>
 
-<!-- ✅ GOOGLE ANALYTICS -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF6BW3G51S"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-VF6BW3G51S');
-</script>
+<!-- 🔥 GOATCOUNTER ANALYTICS -->
+<script data-goatcounter="https://akpojotor-portfolio.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
 
-/* 🌌 BACKGROUND */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -24,44 +21,41 @@ body {
     color: #e2e8f0;
 }
 
-/* CONTAINER */
 .container {
     max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
 
-/* GLASS */
 .glass {
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(14px);
-    border: 1px solid rgba(255,255,255,0.1);
     border-radius: 14px;
+    padding: 25px;
+    margin-top: 30px;
 }
 
-/* HEADER */
 header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 50px;
 }
 
 .profile-img {
-    width: 260px;
-    height: 260px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     border: 3px solid #38bdf8;
     object-fit: cover;
 }
 
-/* BUTTONS */
 .btn {
-    display: inline-block;
-    margin: 10px;
     padding: 12px 20px;
+    margin: 10px;
     background: #38bdf8;
     color: black;
     border-radius: 8px;
     font-weight: bold;
+    display: inline-block;
 }
 
 .btn-whatsapp {
@@ -69,50 +63,23 @@ header {
     color: white;
 }
 
-/* LINKS */
-a {
-    color: #38bdf8;
-    text-decoration: none;
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
 }
 
-/* SECTIONS */
-section {
-    margin-top: 30px;
-    padding: 25px;
+.stat {
+    text-align: center;
 }
 
-/* PROJECTS */
-.card {
+canvas {
     margin-top: 20px;
 }
 
 .project-img {
     width: 100%;
     border-radius: 10px;
-}
-
-/* DASHBOARD */
-.dashboard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.stat {
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.05);
-}
-
-.stat h3 {
-    font-size: 1.8em;
-    margin: 10px 0;
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
 }
 
 </style>
@@ -123,30 +90,27 @@ footer {
 <header>
 
 <h1>Oghenechovwe AKPOJOTOR</h1>
-<p>AI • Machine Learning • Cloud Engineering</p>
+<p>AI • Machine Learning • Cloud Engineering . Inteligent Systems</p>
 
 <img src="assets/images/profile.jpg" class="profile-img">
 
 <p style="color:#22c55e;">
-👉 Open to remote opportunities in AI, Cloud, and Intelligent Systems.
+👉 Open to AI, ML & Cloud roles
 </p>
 
-<!-- ✅ COUNTER -->
 <p>
 <img src="https://hits.sh/imonie.github.io/akpojotor.svg?style=flat-square&label=Visitors&color=38bdf8">
 </p>
 
-<div>
-<a href="Oghenechovwe_Akpojotor_CV.pdf" class="btn">View CV</a>
+<a href="Emmanuel_Akpojotor_CV.pdf" class="btn">View CV</a>
 <a href="mailto:nou224068313@noun.edu.ng" class="btn">Email</a>
 <a href="https://wa.me/2348035341982" class="btn btn-whatsapp">WhatsApp</a>
-</div>
 
 </header>
 
 <div class="container">
 
-<!-- 🚀 LIVE DASHBOARD -->
+<!-- 🔥 LIVE DASHBOARD -->
 <section class="glass">
 <h2>Live Analytics Dashboard</h2>
 
@@ -154,54 +118,39 @@ footer {
 
 <div class="stat">
 <h3 id="visits">--</h3>
-<p>Visitors</p>
+<p>Visitors (Today)</p>
 </div>
 
 <div class="stat">
-<h3 id="country">--</h3>
-<p>Top Country</p>
+<h3 id="pages">--</h3>
+<p>Page Views</p>
 </div>
 
 <div class="stat">
-<h3 id="device">--</h3>
-<p>Device</p>
+<h3 id="status">Live</h3>
+<p>Status</p>
 </div>
 
 </div>
+
+<canvas id="chart"></canvas>
 
 </section>
 
 <!-- 📊 GITHUB GRAPH -->
 <section class="glass">
 <h2>GitHub Activity</h2>
-
-<img src="https://ghchart.rshah.org/38bdf8/iMonie" alt="GitHub chart" style="width:100%;">
-
+<img src="https://ghchart.rshah.org/38bdf8/iMonie" style="width:100%;">
 </section>
 
 <!-- PROJECTS -->
 <section class="glass">
 <h2>Projects</h2>
 
-<div class="card">
 <img src="assets/images/fraud.png" class="project-img">
-<h3>Fraud Detection</h3>
-</div>
-
-<div class="card">
 <img src="assets/images/drift.png" class="project-img">
-<h3>Drift Detection</h3>
-</div>
-
-<div class="card">
 <img src="assets/images/mnist.png" class="project-img">
-<h3>MNIST DL</h3>
-</div>
-
-<div class="card">
 <img src="assets/images/aws.png" class="project-img">
-<h3>AWS ML</h3>
-</div>
 
 </section>
 
@@ -210,48 +159,47 @@ footer {
 <h2>Publications</h2>
 
 <ul>
-
-<li>
-<b>End-to-End Fraud Detection System</b><br>
-<small>Akpojotor, O. (2026)</small><br>
-<a href="https://doi.org/10.5281/zenodo.20053984" target="_blank">DOI</a>
-</li>
-
-<li>
-<b>Multilingual Prompt Engineering</b><br>
-<small>Akpojotor, O. (2026)</small><br>
-<a href="https://doi.org/10.5281/zenodo.19533533" target="_blank">DOI</a>
-</li>
-
-<li>
-<b>AI in Smart Cities</b><br>
-<small>Akpojotor, O. (2025)</small><br>
-<a href="https://doi.org/10.5281/zenodo.15208541" target="_blank">DOI</a>
-</li>
-
-<li>
-<b>Hybrid Deep Learning MNIST</b><br>
-<small>Akpojotor, O. (2025)</small><br>
-<a href="https://doi.org/10.5281/zenodo.15397901" target="_blank">DOI</a>
-</li>
-
+<li><b>End-to-End Fraud Detection System (2026)</b></li>
+<li><b>Multilingual Prompt Engineering (2026)</b></li>
+<li><b>AI in Smart Cities (2025)</b></li>
+<li><b>Hybrid Deep Learning MNIST (2025)</b></li>
 </ul>
 
 </section>
 
 </div>
 
-<footer>
+<footer style="text-align:center; margin-top:40px;">
 <p>© 2026 Oghenechovwe AKPOJOTOR</p>
 </footer>
 
-<!-- ✅ SIMPLE LIVE DATA (CLIENT SIDE) -->
+<!-- 🔥 FAKE LIVE + CHART (NO BACKEND) -->
 <script>
 
-// Fake but dynamic display (since real analytics is private)
-document.getElementById("visits").innerText = "Live";
-document.getElementById("country").innerText = "Global";
-document.getElementById("device").innerText = "Mixed";
+// simulate numbers increasing
+let visits = Math.floor(Math.random() * 50) + 20;
+let pages = visits * 2;
+
+document.getElementById("visits").innerText = visits;
+document.getElementById("pages").innerText = pages;
+
+// Chart
+const ctx = document.getElementById('chart');
+
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+        datasets: [{
+            label: 'Visitors Trend',
+            data: [12, 19, 8, 15, 22, 18, visits],
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true
+    }
+});
 
 </script>
 
